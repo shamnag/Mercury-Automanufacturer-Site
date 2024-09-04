@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>s
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Автомобильный магазин</title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a class="logo" href="HTMLPage1.html"><img src="1260660.png" /></a>
+        <div class="dropdown">
+            <a class="dropdown">Модельный ряд</a>
+            <div class="dropdown-content">
+                <a href="Terra.html">Mercury Terra</a>
+                <a href="Indivigo.html">Mercury Indivigo</a>
+                <a href="amily.html">Mercury Amily</a>
+            </div>
+        </div>
+        <a>Сервисное обслуживание</a>
+        <a>Официальные дилеры</a>
+        <a style="float: right">Аккаунт</a>
+    </div>
+
+    <div class="special-offer">
+        <br />
+        <div class="offer-image">
+            <a class="slide-image-text" style="bottom: 50px; font-size: 70px">Скидка</a>
+            <a class="slide-image-text">на гарантийное обслуживание 60%</a>
+            <img src="res/engine.jpg" style="width: 100%" />
+        </div>
+        <div class="offer-image">
+            <a class="slide-image-text" style="bottom: 50px; font-size: 70px">Выгода</a>
+            <a class="slide-image-text">специальное предложение по льготному кредиту</a>
+            <img src="res/loan.png" style="width: 100%" />
+        </div>
+        <div class="offer-image">
+            <a class="slide-image-text" style="bottom: 50px; font-size: 70px">Тест-драйв Terra</a>
+            <a class="slide-image-text">Опробуйте новый внедорожник </a>
+            <img src="res/interior.png" style="width: 100%" />
+        </div>
+
+        <a class="slide-btn-next" style="color: white" onclick="changeSlide(1, 'offer-image', 1)">></a>
+        <a class="slide-btn-back" style="color: white" onclick="changeSlide(-1, 'offer-image', 1)"><</a>
+    </div>
+
+    <div class="slide">
+        <div class="slide-image">
+            <a class="slide-image-text">Mercury Terra</a>
+            <a href="Terra.html"><img src="res/suv-wide.png" style="width: 100%"></a>
+        </div>
+        <div class="slide-image">
+            <a class="slide-image-text">Mercury Amily</a>
+            <a href="amily.html"><img src="res/amily.png" style="width: 100%"></a>
+        </div>
+        <div class="slide-image">
+            <a class="slide-image-text">Mercury Indivigo</a>
+            <a href="Indivigo.html"><img src="res/indivigo-blue.png" style="width: 100%"></a>
+        </div>
+
+        <a class="slide-btn-next" style="color: white" onclick="changeSlide(1, 'slide-image', 1)">></a>
+        <a class="slide-btn-back" style="color: white" onclick="changeSlide(-1, 'slide-image', 1)"><</a>
+
+    </div>
+
+    <div class="about-us">
+        <div style="position:relative; left: 0; width: 50%; justify-content: center">
+            <img src="res/logo.png" style="display: block;width: 50%; margin: auto;" />
+        </div>
+        <div style="position:relative; right: 0; width: 50%">
+            <a>
+                Компания Mercury была основана в 1965 году талантливым
+                инженером и предпринимателем Александром Новиковым. После
+                успешной карьеры в крупных автомобильных концернах, он решил
+                создать свою собственную марку, которая бы сочетала в себе
+                инновации, надежность и стиль. Первый автомобиль Mercury,
+                названный "Сириус", быстро завоевал популярность благодаря
+                своим передовым техническим характеристикам и элегантному
+                дизайну. В 1970-е годы Mercury стала символом престижа и
+                качества, а её автомобили были востребованы по всему миру.
+                Постоянно внедряя новейшие технологии и уделяя особое внимание
+                экологичности, компания сумела сохранить свои позиции на
+                рынке и в XXI веке, предлагая покупателям как роскошные седаны,
+                так и экономичные гибридные модели.
+            </a>
+        </div>
+    </div>
+
+    <div class="news">
+        <a>Новости</a>
+        <div class="news-scroll">
+            <div class="news-block">
+                <div class="news-article">Новость</div>
+                <div class="news-text">
+                    Компания Mercury была основана в 1965 году талантливым
+                    инженером и предпринимателем Александром Новиковым. После
+                    успешной карьеры в крупных автомобильных концернах, он решил
+                    создать свою собственную марку, которая бы сочетала в себе
+                    инновации, надежность и стиль.
+                </div>
+            </div>
+            <div class="news-block">
+                <div class="news-article">Новость</div>
+                <div class="news-text">
+                    Компания Mercury была основана в 1965 году талантливым
+                    инженером и предпринимателем Александром Новиковым. После
+                    успешной карьеры в крупных автомобильных концернах, он решил
+                    создать свою собственную марку, которая бы сочетала в себе
+                    инновации, надежность и стиль.
+                </div>
+            </div>
+            <div class="news-block">
+                <div class="news-article">Новость</div>
+                <div class="news-text">
+                    Компания Mercury была основана в 1965 году талантливым
+                    инженером и предпринимателем Александром Новиковым. После
+                    успешной карьеры в крупных автомобильных концернах, он решил
+                    создать свою собственную марку, которая бы сочетала в себе
+                    инновации, надежность и стиль.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="basement">
+        <div class="news-scroll">
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article">Модельный ряд</div>
+                <div class="news-text" style="display:grid">
+                    <a href="Terra.html">Mercury Terra</a>
+                    <a href="Indivigo.html">Mercury Indivigo</a>
+                    <a href="amily.html">Mercury Amily</a>
+                </div>
+            </div>
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article"><a>Сервисное обслуживание</a></div>
+                <div class="news-article"><a>Официальные дилеры</a></div>
+                <div class="news-article"><a>О Mercury</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>

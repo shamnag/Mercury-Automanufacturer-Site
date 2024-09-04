@@ -1,0 +1,180 @@
+﻿.navbar {
+    position: fixed;    
+    background-color: #808080;
+    display: inline;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    z-index: 5;
+}
+    .navbar a {
+        float: left;
+        text-align: center;
+        padding: 20px 15px 0px 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+.navbar a.logo {
+    padding: 5px;
+}
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    .dropdown-content a:hover {
+        background-color: #7a7a7a;
+    }
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+.slide-image, .offer-image {
+    display: none;
+}
+.slide {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+.slide-image-text {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    text-align: right;
+    font-size: 55px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.about-info {
+    position: relative;
+    top: 70px;
+}
+.about-point {
+    position:absolute;
+}
+.about-point:hover {
+    font-size: 1.25em;
+}
+.about-window {
+    position: absolute;
+    height: 85%;
+    width: 30%;
+    margin: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #282828f6;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.about-window img {
+    width: 70%;
+    margin: 0px 40px 0px 40px;
+    border-radius: 8px;
+}
+.about-headtext {
+    position: relative;
+    top: 0;
+    margin: 12px 30px 12px 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.about-text {
+    text-align: justify;
+    margin: 20px 40px 20px 40px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.about-button {
+    display: flex;
+    position: relative;
+    width: 90px;
+    height: 40px;
+    margin: 5px;
+    bottom: 30px;
+    border-color: #ffffffc2;
+    border-width: 2px;
+    border-radius: 30px;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: center;
+}
+    .about-button a {
+        font-size: 20px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+.pre-config {
+    position: relative;
+    top: 80px;
+}
+
+
+
+.news {
+    position: relative;
+    top: 200px;
+}
+    .news a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        font-size: 25px;
+        
+    }
+.news-scroll {
+    padding: 20px;
+    display: flex;
+}
+.news-block {
+    background-color: #b8daff;
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+}
+.news-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    font-size: 15px;
+}
+.news-article {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3px;
+    font-size: 22px;
+}
+.basement {
+    position: relative;
+    top: 90px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 300px;
+    width: 100%;
+    background-color: #484747;
+}
+    .basement a {
+        padding: 5px;
+        color: white;
+    }

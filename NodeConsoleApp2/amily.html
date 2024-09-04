@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>s
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mercury Amily</title>
+    <link href="amily.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a class="logo" href="HTMLPage1.html"><img src="1260660.png" /></a>
+        <div class="dropdown">
+            <a class="dropdown">Модельный ряд</a>
+            <div class="dropdown-content">
+                <a href="Terra.html">Mercury Terra</a>
+                <a href="Indivigo.html">Mercury Indivigo</a>
+                <a href="amily.html">Mercury Amily</a>
+            </div>
+        </div>
+        <a>Сервисное обслуживание</a>
+        <a>Официальные дилеры</a>
+        <a style="float: right">Аккаунт</a>
+    </div>
+
+    <div style="position: relative; display: flex; align-items: center; top: 50px">
+        <img src="res/amily-poster.png" style="width: 100%" />
+        <div style="position: absolute; display: flex; width: 50%; margin: 30px; flex-direction: column">
+            <div><a class="head-text" style="font-size: 90px">Воспоминания</a></div>
+            <div><a class="head-text">Вместе с Amily</a></div>
+        </div>
+    </div>
+
+    <div class="about-info">
+        <div id="about-rear">
+            <img src="res/amily-rearview.png" style="width: 100%" />
+            <div class="about-point" style="top: 210px; right: 250px" onclick="aboutWindow('trunk')">&#9898</div>
+            <div class="about-point" style="top: 260px; right: 460px" onclick="aboutWindow('rearlight')">&#9898</div>
+            <div class="about-point" style="top: 330px; right: 700px" onclick="aboutWindow('suspension')">&#9898</div>
+            <div class="about-point" style="top: 480px; right: 240px" onclick="aboutWindow('sensor')">&#9898</div>
+
+        </div>
+        <div id="about-front">
+            <img src="res/amily-frontview.png" style="width: 100%" />
+            <div class="about-point" style="top: 60px; right: 800px" onclick="aboutWindow('panoramic')">&#9898</div>
+            <div class="about-point" style="top: 430px; right: 850px" onclick="aboutWindow('wheel')">&#9898</div>
+            <div class="about-point" style="top: 280px; right: 650px" onclick="aboutWindow('light')">&#9898</div>
+        </div>
+        <div class="about-window" style="left: 0">
+            <div class="about-headtext"></div>
+            <img class="about-img" />
+            <div class="about-text"></div>
+        </div>
+        <div style="position:absolute; width: 100%; bottom: 30px; height: 60px; display: flex; flex-direction: row; justify-content: center;">
+            <div id="button-rear" class="about-button" onclick="changeAbout('rear')"><a id="b-rear-txt">Зад</a></div>
+            <div id="button-front" class="about-button" onclick="changeAbout('front')"><a id="b-front-txt">Перед</a></div>
+        </div>
+    </div>
+
+    <div class="pre-config">
+        <div style="position: absolute; width: 100%; top: 120px; display: flex; flex-direction: row;">
+            <div id="button-15" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-15')">
+                <a id="button-15-txt">1.5</a>
+            </div>
+            <div id="button-15t" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-15t')">
+                <a id="button-15t-txt">1.5 Turbo</a>
+            </div>
+            <div id="button-18" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-18')">
+                <a id="button-18-txt">1.8</a>
+            </div>
+        </div>
+        <div style="position: absolute; width: 100%; top: 170px; display: flex; flex-direction: row;">
+            <div id="button-MT" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-MT')">
+                <a id="button-MT-txt">MT</a>
+            </div>
+            <div id="button-CVT" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-CVT')">
+                <a id="button-CVT-txt">CVT</a>
+            </div>
+            <div id="button-AT" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-AT')">
+                <a id="button-AT-txt">AT</a>
+            </div>
+        </div>
+        <div style="position: absolute; width: 100%; top: 220px; display: flex; flex-direction: row;">
+            <div id="button-base" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-base')">
+                <a id="button-base-txt">Base</a>
+            </div>
+            <div id="button-medium" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-medium')">
+                <a id="button-medium-txt">Medium</a>
+            </div>
+            <div id="button-max" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-max')">
+                <a id="button-max-txt">Maximum</a>
+            </div>
+        </div>
+        <img src="res/amily-side.png" style="width: 100%" />
+        <div class="about-button" style="position: absolute; left: 80px; bottom: 80px; width:max-content; padding: 0px 30px; background-color: white;" onclick="openConfig()">
+            <a style="color: black">Перейти в конфигуратор</a>
+        </div>
+    </div>
+
+    <div class="basement">
+        <div class="news-scroll">
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article">Модельный ряд</div>
+                <div class="news-text" style="display:grid">
+                    <a href="Terra.html">Mercury Terra</a>
+                    <a href="Indivigo.html">Mercury Indivigo</a>
+                    <a href="amily.html">Mercury Amily</a>
+                </div>
+            </div>
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article"><a>Сервисное обслуживание</a></div>
+                <div class="news-article"><a>Официальные дилеры</a></div>
+                <div class="news-article"><a>О Mercury</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="amily.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>

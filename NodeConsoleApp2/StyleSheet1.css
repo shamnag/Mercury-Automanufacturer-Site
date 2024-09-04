@@ -1,0 +1,199 @@
+﻿.navbar {
+    position: fixed;    
+    background-color: #808080;
+    display: inline;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    z-index: 5;
+}
+    .navbar a {
+        float: left;
+        text-align: center;
+        padding: 20px 15px 0px 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+.navbar a.logo {
+    padding: 5px;
+}
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    .dropdown-content a:hover {
+        background-color: #7a7a7a;
+    }
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.slide-image, .offer-image {
+    display: none;
+}
+.slide {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+.slide-btn-next, .slide-btn-back {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    z-index: 1;
+}
+.slide-btn-back {
+    left: 5px;
+}
+.slide-btn-next {
+    right: 5px;
+}
+.slide-image-text {
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.brief {
+    position: relative;
+    top: 80px;
+    background-color: #808080;
+}
+.brief-row {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+}
+.brief-img {
+    width: 60%;
+    top: 20%;
+}
+    .brief a {
+        left: 40px;
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+.brief-amilia, .brief-iduale, .brief-terra {
+    width: 33%;
+    margin-bottom: 7px;
+}
+.brief-amilia {
+    background-color: #a3d8aa;
+    
+}
+.brief-terra {
+    background-color: #af5a3a;
+
+}
+.brief-iduale {
+    background-color: #f92f2f;
+
+}
+.brief-table {
+    display: flex;
+    justify-content: center;
+}
+    .brief-table a {
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+.special-offer {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    text-align:center;
+}
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    height: 25%;
+    bottom: 0;
+    width: auto;
+}
+.about-us {
+    position: relative;
+    top: 150px;
+    display: flex;
+    align-items: center;
+}
+    .about-us a {
+        display: block;
+        width: 80%;
+        text-align: justify;
+        font-size: 19px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: auto;
+    }
+
+.news {
+    position: relative;
+    top: 200px;
+}
+    .news a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        font-size: 25px;
+        
+    }
+.news-scroll {
+    padding: 20px;
+    display: flex;
+}
+.news-block {
+    background-color: #b8daff;
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+}
+.news-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    font-size: 15px;
+}
+.news-article {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3px;
+    font-size: 22px;
+}
+.basement {
+    position: relative;
+    top: 200px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 300px;
+    width: 100%;
+    background-color: #484747;
+}
+    .basement a {
+        padding: 5px;
+        color: white;
+    }
+.terra-head {
+    position: relative;
+    top: 50px;
+    padding: 5px;
+}
+.trans {
+    transition:
+}

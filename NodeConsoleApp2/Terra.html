@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>s
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mercury Terra</title>
+    <link href="terra.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a class="logo" href="HTMLPage1.html"><img src="1260660.png" /></a>
+        <div class="dropdown">
+            <a class="dropdown">Модельный ряд</a>
+            <div class="dropdown-content">
+                <a href="Terra.html">Mercury Terra</a>
+                <a href="Indivigo.html">Mercury Indivigo</a>
+                <a href="amily.html">Mercury Amily</a>
+            </div>
+        </div>
+        <a>Сервисное обслуживание</a>
+        <a>Официальные дилеры</a>
+        <a style="float: right">Аккаунт</a>
+    </div>
+
+    <div class="slide">
+        <div class="slide-image-text" style="font-size: 100px; bottom: 50px">Terra</div>
+        <div class="slide-image-text">
+            Исследуйте мир с новым внедорожником
+        </div>
+        <div class="slide-image">
+            <img src="res/suv2.png" style="width: 100%" />
+        </div>
+        <div class="slide-image">
+            <img src="res/suv-interior.png" style="width: 100%" />
+        </div>
+        <div class="slide-image">
+            <img src="res/suv-wide.png" style="width: 100%" />
+        </div>
+    </div>
+
+    <div class="about-info">
+        <div id="about-rear">
+            <img src="res/suv-sideview.png" style="width: 100%" />
+            <div class="about-point" style="top: 200px; left: 300px" onclick="aboutWindow('trunk')">&#9898</div>
+            <div class="about-point" style="top: 220px; left: 500px" onclick="aboutWindow('rearlight')">&#9898</div>
+            <div class="about-point" style="top: 470px; left: 430px" onclick="aboutWindow('exhaust')">&#9898</div>
+            <div class="about-point" style="top: 330px; left: 750px" onclick="aboutWindow('suspension')">&#9898</div>
+
+        </div>
+        <div id="about-front">
+            <img src="res/suv-front.png" style="width: 100%" />
+            <div class="about-point" style="top: 450px; left: 300px" onclick="aboutWindow('sidestep')">&#9898</div>
+            <div class="about-point" style="top: 140px; left: 480px" onclick="aboutWindow('hatch')">&#9898</div>
+            <div class="about-point" style="top: 460px; left: 430px" onclick="aboutWindow('wheel')">&#9898</div>
+            <div class="about-point" style="top: 310px; left: 750px" onclick="aboutWindow('engine')">&#9898</div>
+        </div>
+        <div class="about-window">
+            <div class="about-headtext"></div>
+            <img class="about-img" />
+            <div class="about-text"></div>
+        </div>
+        <div style="position:absolute; width: 100%; bottom: 30px; height: 60px; display: flex; flex-direction: row; justify-content: center;">
+            <div id="button-rear" class="about-button" onclick="changeAbout('rear')"><a id="b-rear-txt">Зад</a></div>
+            <div id="button-front" class="about-button" onclick="changeAbout('front')"><a id="b-front-txt">Перед</a></div>
+        </div>
+    </div>
+
+    <div class="about-info">    
+        <div id="about-frontseats">
+            <img src="res/suv-interior2.png" style="width: 100%" />
+            <div class="about-point" style="top: 360px; right: 165px" onclick="aboutWindow('startstop')">&#9898</div>
+            <div class="about-point" style="top: 290px; right: 380px" onclick="aboutWindow('steeringwheel')">&#9898</div>
+            <div class="about-point" style="top: 270px; right: 600px" onclick="aboutWindow('multimedia')">&#9898</div>
+            <div class="about-point" style="top: 360px; right: 670px" onclick="aboutWindow('climate')">&#9898</div>
+
+        </div>
+        <div id="about-backseats">
+            <img src="res/suv-backseats.png" style="width: 100%" />
+            <div class="about-point" style="top: 350px; right: 300px" onclick="aboutWindow('seats')">&#9898</div>
+            <div class="about-point" style="top: 140px; right: 530px" onclick="aboutWindow('fold')">&#9898</div>
+            <div class="about-point" style="top: 300px; right: 580px" onclick="aboutWindow('armrest')">&#9898</div>
+            <div class="about-point" style="top: 450px; right: 800px" onclick="aboutWindow('seatheat')">&#9898</div>
+        </div>
+        <div class="about-window" style="left: 0; right:auto">
+            <div class="about-headtext"></div>
+            <img class="about-img" />
+            <div class="about-text"></div>
+        </div>
+        <div style="position:absolute; width: 100%; bottom: 30px; height: 60px; display: flex; flex-direction: row; justify-content: center;">
+            <div id="button-frontseats" class="about-button" style="width:max-content; padding: 0px 20px" onclick="changeAbout('frontseats')">
+                <a id="b-fseat-txt">Передние сиденья</a>
+            </div>
+            <div id="button-backseats" class="about-button" style="width: max-content; padding: 0px 17px" onclick="changeAbout('backseats')">
+                <a id="b-bseat-txt">Задние сиденья</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pre-config">
+        <div style="position: absolute; width: 100%; top: 120px; display: flex; flex-direction: row;">
+            <div id="button-15" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-15')">
+                <a id="button-15-txt">1.5</a>
+            </div>
+            <div id="button-15t" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-15t')">
+                <a id="button-15t-txt">1.5 Turbo</a>
+            </div>
+            <div id="button-18" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-18')">
+                <a id="button-18-txt">1.8</a>
+            </div>
+            <div id="button-20d" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-20d')">
+                <a id="button-20d-txt">2.0d</a>
+            </div>
+        </div>
+        <div style="position: absolute; width: 100%; top: 170px; display: flex; flex-direction: row;">
+            <div id="button-MT" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-MT')" >
+                <a id="button-MT-txt">MT</a>
+            </div>
+            <div id="button-CVT" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-CVT')" >
+                <a id="button-CVT-txt">CVT</a>
+            </div>
+            <div id="button-AT" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-AT')">
+                <a id="button-AT-txt">AT</a>
+            </div>
+        </div>
+        <div style="position: absolute; width: 100%; top: 220px; display: flex; flex-direction: row;">
+            <div id="button-base" class="about-button" style="margin: 5px 5px 5px 70px; width: max-content; padding: 0px 30px" onclick="configButtons('button-base')">
+                <a id="button-base-txt">Base</a>
+            </div>
+            <div id="button-medium" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-medium')">
+                <a id="button-medium-txt">Medium</a>
+            </div>
+            <div id="button-max" class="about-button" style="width: max-content; padding: 0px 30px" onclick="configButtons('button-max')">
+                <a id="button-max-txt">Maximum</a>
+            </div>
+        </div>
+        <img src="res/suv-rear-wheel2.png" style="width: 100%" />
+        <div class="about-button" style="position: absolute; left: 80px; bottom: 80px; width:max-content; padding: 0px 30px; background-color: white;" onclick="openConfig()">
+            <a  style="color: black">Перейти в конфигуратор</a>
+        </div>
+    </div>
+
+    <div class="basement">
+        <div class="news-scroll">
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article">Модельный ряд</div>
+                <div class="news-text" style="display:grid">
+                    <a href="Terra.html">Mercury Terra</a>
+                    <a href="Indivigo.html">Mercury Indivigo</a>
+                    <a href="amily.html">Mercury Amily</a>
+                </div>
+            </div>
+            <div class="news-block" style="background-color: transparent; margin: 5px; color: white">
+                <div class="news-article"><a>Сервисное обслуживание</a></div>
+                <div class="news-article"><a>Официальные дилеры</a></div>
+                <div class="news-article"><a>О Mercury</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="terra.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
